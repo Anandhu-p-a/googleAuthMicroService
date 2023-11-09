@@ -13,8 +13,9 @@ app.use(cors());
 
 app.get("/",async(req,res)=>{
     try {
-        let data = await UserModel.find()
-        res.send(data)
+        // let data = await UserModel.find()
+        // res.send(data)
+        res.send("Microservice for Google OAuth  ")
     } catch (error) {
         console.log(error)
     }
